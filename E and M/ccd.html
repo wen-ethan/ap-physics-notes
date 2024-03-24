@@ -1,17 +1,114 @@
 <!DOCTYPE html>
-  <html>
-    <head>
+<html>
+   <head>
       <title>AP Physics C: Electricity & Magnetism - Conductors, Capacitors, Dielectrics</title>
       <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
       <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js"></script>
-    </head>
-    <body>
+   </head>
+   <body>
       <header>
-        <h1>AP Physics C</h1>
-        <a href='/ap-physics-notes/mechanics.html'>Mechanics</a> /
-        <a href='/ap-physics-notes/eandm.html'>Electricity & Magnetism</a>
+         <h1>AP Physics C</h1>
+         <a href='/ap-physics-notes/mechanics.html'>Mechanics</a> /
+         <a href='/ap-physics-notes/eandm.html'>Electricity & Magnetism</a>
       </header>
-      <h2>Unit 2 - Conductors, Capacitors, Dielectrics</h2>
-    </body>
-  </html>
+      <h2>Unit 2 - Electric Potential & Conductors, Capacitors, Dielectrics</h2>
+      <h3>Electric Potential</h3>
+      <h4>Potential for Point Charges</h4>
+      <p>$V = \sum_{i=1}^{n} \frac{1}{4 \pi \epsilon_{0}} \, (\frac{Q_i}{r})$</p>
+      <ul>
+         <li>Sum up all electric potentials that act on a given point from any given ion.</li>
+      </ul>
+      <h4>Potential of Conducting Spheres</h4>
+      <p>$\Delta V = V_a - V_b =  - \int_{a}^{b} E \, dr$</p>
+      <p>For a singular point charge, $V = \frac{1}{4 \pi \epsilon_{0}} \, (\frac{Q}{r})$</p>
+      <ul>
+         <li>For conducting spheres, all charge is concentrated on the surface.</li>
+         <li>As such, outside the sphere, the potential <strong>behaves like point charge.</strong></li>
+      </ul>
+      <h3>Work Done by Electric Field</h3>
+      <p>$W = - q \Delta V$</p>
+      <ul>
+         <li>Positive Charges: Electric field does negative work on a positive charge to go from high to low potential.</li>
+         <ul>
+            <li>$\Delta V$ is negative $ \rightarrow W$ is negative</li>
+         </ul>
+         <li>Negative Charges: Electric Field does negative work to move from low to high potential.</li>
+         <ul>
+            <li>$\Delta V$ is positive, while $q$ is negative $ \rightarrow W$ is negative</li>
+         </ul>
+      </ul>
+      <h3>Work Done by Applied Forces</h3>
+      <p>$W_{applied} = q \Delta V$</p>
+      <ul>
+         <li>Positive work is done to counteract and go against the electric field due to the applied force.</li>
+      </ul>
+      <h3>Capacitors & Dielectrics</h3>
+      <h4>Capacitance for Different Capacitors</h4>
+      <ul>
+         <li>Cylindrical: $C_{0} = \frac{2 \pi \epsilon_{0} \ell}{\ln (\frac{b}{a})}$</li>
+         <li>Spherical: $C_{0} = 4 \pi \epsilon_{0} \frac{(b \times a)}{b- a}$</li>
+         <li>Parallel Plate: $C_{0} = \frac{\epsilon_{0} A}{d}$</li>
+      </ul>
+      <h4>Effect of Diaelectrics</h4>
+      <h5>Vaccum (No Dielectric)</h5>
+      <p>For all capacitors:</p>
+      <ul>
+         <li>$C = C_{0}$</li>
+      </ul>
+      <p>For parallel plate capacitors:</p>
+      <ul>
+         <li>$|\vec{E}|$ $= \frac{\sigma}{\epsilon_{0}}$, where $\sigma = \frac{Q}{A}$</li>
+         <li>$|\vec{E}|$ $= \frac{V}{d}$</li>
+      </ul>
+      <h5>Some Percentage of Diaelectric</h5>
+      <ul>
+         <li>Capacitance is equal to the fraction of capacitance without any dialectric plus the fraction of capacitance with dialectric added together.</li>
+      </ul>
+      <h5>Completely Filled with Diaelectric</h5>
+      <p>For all capacitors:</p>
+      <ul>
+         <li>$C = \kappa  C_{0}$</li>
+      </ul>
+      <p>For parallel plate capacitors:</p>
+      <ul>
+         <li>$|\vec{E}|$ $= \frac{\sigma}{\epsilon}$, where $\epsilon = \kappa \epsilon_{0}$</li>
+      </ul>
+      <h4>Relationships regarding Parallel Plate Capacitors</h4>
+      <p></p>
+      <table style="width:100%">
+         <caption>Relationships regarding Parallel Plate Capacitors</caption>
+         <tr>
+            <th>Connected to Battery</th>
+            <th>Disconnected to Battery</th>
+         </tr>
+         <tr>
+            <td>$V = V_{0}$</td>
+            <td>$V = \frac{V_{0}}{\kappa}$</td>
+         </tr>
+         <tr>
+            <td>$C = \kappa C_{0}$</td>
+            <td>$C = \kappa C_{0}$</td>
+         </tr>
+         <tr>
+            <td>$Q = \kappa Q_{0}$, $\sigma = \kappa \sigma_{0}$</td>
+            <td>$Q = Q_{0}$, $\sigma = \sigma_{0}$</td>
+         </tr>
+         <tr>
+            <td>$E = E_{0}$</td>
+            <td>$E = \frac{E_{0}}{\kappa}$</td>
+         </tr>
+         <tr>
+            <td>$U = \kappa U_{0}$</td>
+            <td>$U = \frac{U_{0}}{\kappa}$</td>
+         </tr>
+      </table>
+      <h4>Capacitors in Series and Parallel</h4>
+      <h5>Series</h5>
+      <p>$\frac{1}{C_{tot}} = \sum_{i=1}^{n} \frac{1}{C_i}$</p>
+      <h5>Parallel</h5>
+      <p>$C_{tot} = \sum_{i=1}^{n} C_i$</p>
+      <h4>Energy Stored in a Capacitor</h4>
+      <p>$U_C = \frac{Q^2}{2C} = \frac{1}{2} QV = \frac{1}{2} C \, (V)^2$</p>
+   </body>
+</html>

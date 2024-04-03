@@ -1,1 +1,72 @@
-
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>AP Physics C: Electricity & Magnetism - Electromagnetism</title>
+      <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+      <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1>AP Physics C</h1>
+         <a href='/ap-physics-notes/mechanics.html'>Mechanics</a> /
+         <a href='/ap-physics-notes/eandm.html'>Electricity & Magnetism</a> /
+         <a href='/ap-physics-notes/practice.html'>Practice Resources</a>
+      </header>
+      <h2>Unit 5 - Electromagnetism</h2>
+      <h3>Magnetic Flux</h3>
+      <p>$\Phi_B = \int \vec{B} \cdot d\vec{A} = BA \cos \theta</p>
+      <p>This equation is really similar to the equation for electric flux; just replace electric field $\vec{E}$ with magnetic field $\vec{B}$.</p>
+      <h4>Gauss's Law for Magnetism</h4>
+      <p>$\Phi_B = \int \vec{B} \cdot d\vec{A} = 0$</p>
+      <p>Every magnetic field line that enters must exit, so there cannot be a net flux.</p>
+      <h3>Electromagnetic Induction</h3>
+      <p>$|\epsilon|$ $=N$ $|\frac{d \Phi_B}{dt}|$ $= N$ $|\frac{d(BA\cos\theta)}{dt}|$</p>
+      <p>As shown above, a changing B-field, area of B-field, or angle can all affect the induced emf.</p>
+      <h4>Direction of Induced EMF via Lenz's Law</h4>
+      <ul>
+        <li>Determine if $\Phi_B$ is increasing or decreasing over time.</li>
+        <li>Then, make $B_{induced}$  allow for no net B-field change.</li>
+        <ul>
+          <li>If $\Phi_B$ is increasing, then $B_{induced}$ will try to counteract this by going in the opposite direction of the given B-field.</li>
+          <li>Likewise, if $\Phi_B$ is decreasing, then $B_{induced}$ will try to counteract this by going in the same direction of the given B-field.</li>
+        </ul>
+        <li>Thumb goes in the direction of $B_{induced}$, then fingers curl in the direction of induced current.</li>
+      </ul>
+      <h3>Motional EMF</h3>
+      <p>$\epsilon = vBL$</p>
+      <p>When a loop is moving into a magnetic field, an EMF is induced from its movement through the field.</p>
+      <h3>Induced Forces on Current-Carrying Loops</h3>
+      <!-- erm what???? -->
+      <p>The torque of a loop as it spins around its center due to a magnetic field is equal to $\tau = NIAB \sin \theta$.</p>
+      <h3>Inductors and Inductance</h3>
+      <p>$\epsilon_L = -L \frac{dI}{dt}$</p>
+      <ul>
+        <li>Inductance is an opposition to a change in current in a conductor.</li>
+        <ul>
+          <li>This differs from a resistor, which opposes current in general, rather than a change in current.</li>
+        </ul>
+        <li>An inductor is a material with a known inductance.</li>
+      </ul>
+      <h4>Inductance of an Ideal Solenoid</h4>
+      <p>$B_{solenoid} = \frac{\mu_0 N I}{\ell} \rightarrow L_{solenoid} = \frac{\mu_0 N^2 A}{\ell}$</p>
+      <p><strong>This equation is not given</strong>, but is extremely useful!</p>
+      <h4>Energy in an Inductor</h4>
+      <p>$U_L = \frac{1}{2}LI^2$</p>
+      <h3>LR Circuits</h3>
+      <p>$I(t) = I_{max} \, (1 - e^{\frac{-Rt}{L}})$, $V(t) = V_{max} \, (e^{\frac{-Rt}{L}})$</p>
+      <ul>
+        <li>At $t = 0$, the inductor opposes the change in current, forcing the current to grow from zero to its final steady state.</li>
+        <li>At $t = \infty$, the inductor acts as a wire and is essentially "invisible" to the rest of the circuit.</li>
+        <li>In this type of circuit, the time constant $\tau = \frac{L}{R}$ is when the current is 63.2% of its final, steady-state current.</li>
+      </ul>
+      <img src='/ap-physics-notes/image/LR-graphs.png' style='width:400px;'>
+      <h3>LC Circuits</h3>
+      <p>$I_{max} = \frac{Q}{\sqrt{LC}}$</p>
+      <ul>
+        <li>In this circuit, the conductor discharges, and the magnitude of its electric field decreases. The inductor initially opposes the change in current before allowing it to flow within it, increasing the magnitude of its magnetic field.</li>
+        <li>Then, the conductor begins to build up charge in the opposite direction in which it discharged due to the flow of current caused by the inductor.</li>
+        <li>This continues forever, essentially in simple harmonic motion between the conductor and inductor.</li>
+      </ul>
+   </body>
+</html>

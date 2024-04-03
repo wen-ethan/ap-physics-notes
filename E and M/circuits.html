@@ -10,8 +10,41 @@
       <header>
          <h1>AP Physics C</h1>
          <a href='/ap-physics-notes/mechanics.html'>Mechanics</a> /
-         <a href='/ap-physics-notes/eandm.html'>Electricity & Magnetism</a>
+        <a href='/ap-physics-notes/eandm.html'>Electricity & Magnetism</a> /
+        <a href='/ap-physics-notes/practice.html'>Practice Resources</a>
       </header>
       <h2>Unit 3 - Electric Circuits</h2>
+      <h3>Resistors in Series v.s. Parallel</h3>
+      <p>In series, the magnitudes of the resistors add up: $R_{eq} = \sum_{i=1}^{n} R_i$</p>
+      <p>However, in parallel, the inverse of the equivalent resistance is equal to the sum of the inverse of each resistor's magnitude: $\frac{1}{R_{eq}} = \sum_{i=1}^{n} \frac{1}{R_i}$</p>
+      <h3>Resistivity</h3>
+      <p>$R = \rho \, (\frac{L}{A})$</p>
+      <ul>
+         <li>$\rho$ is the resistivity, where the resistivity is a physical property of a resistory.</li>
+         <li>A higher $\rho$ leads to a higher resistance, and vice versa.</li>
+      </ul>
+      <h3>Internal Resistance and Terminal Voltage</h3>
+      <p>$V_{Terminal} = \varepsilon - Ir$</p>
+      <ul>
+         <li>For an imperfect battery, the emf $\varepsilon$ produced is not the experienced voltage within the circuit.</li>
+         <li>Instead, the terminal voltage (the voltage experienced by the circuit) is the difference between the emf $\varepsilon$ of the battery and the voltage drop caused by the battery's internal resistance $Ir$.</li>
+      </ul>
+      <h3>Energy and Power</h3>
+      <p>$P = IV = I^2 R = \frac{V^2}{R}$</p>
+      <p>$P = \frac{dE}{dt} \rightarrow E = \int P \, dt$</p>
+      <ul>
+         <li>Only the first form of the equation is given, but using Ohm's Law ($V = IR$), any of the 3 equations can be found.</li>
+      </ul>
+      <h3>RC Circuits</h3>
+      <h4>Charging</h4>
+      <img src="/ap-physics-notes/image/voltage-charging.png" alt="Graph showing Voltage v Time for a capacitor when charging.">
+      <p>$V_C = V_0 \, (1-e^{\frac{-t}{RC}})$</p>
+      <img src="/ap-physics-notes/image/current-charging.png" alt="Graph showing Current v Time for a capacitor when charging.">
+      <p>$I_C = I_0 \, (e^{\frac{-1}{RC}})$</p>
+      <h4>Discharging</h4>
+      <img src="/ap-physics-notes/image/voltage-discharging.png" alt="Graph showing Voltage v Time for a capacitor when discharging.">
+      <p>$V_C = V_0 \, (e^{\frac{-t}{RC}})$</p>
+      <img src="/ap-physics-notes/image/current-discharging.png" alt="Graph showing Current v Time for a capacitor when discharging.">
+      <p>$I_C = I_0 \, (e^{\frac{-1}{RC}})$</p>
    </body>
 </html>
